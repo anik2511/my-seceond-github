@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===================== META & SEO ===================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A romantic love letter website made with love for Subaita — every moment with you is my favorite memory.">
+    <meta name="theme-color" content="#f9d5e5">
+    <meta property="og:title" content="To My Beautiful Girl, Subaita ❤️">
+    <meta property="og:description" content="Every moment with you is my favorite memory.">
+    <meta property="og:type" content="website">
+    <title>For Subaita ❤️ — Every Moment With You</title>
+
+    <!-- Favicon (inline heart emoji, works offline) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+
+    <!-- Google Fonts (optional — falls back to beautiful system fonts if offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ===================== CUSTOM STYLES (fully self-contained) ===================== -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================== FLOATING HEARTS LAYER ===================== -->
+    <div id="hearts-layer" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="brand">S <span class="brand-heart">❤️</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#letter">Love Letter</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#reasons">Why I Love You</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#counter">Counter</a></li>
+            </ul>
+
+            <button class="btn btn-nav" onclick="window.__openSurprise && window.__openSurprise()">🎁 Surprise</button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <header id="hero">
+        <!-- Animated particle canvas (hearts + sparkles) -->
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+        <!-- Soft gradient glow orbs (parallax) -->
+        <div class="orb orb-1" data-speed="20"></div>
+        <div class="orb orb-2" data-speed="-25"></div>
+        <div class="orb orb-3" data-speed="35"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
+            <p class="hero-eyebrow">You &amp; I</p>
+            <h1 id="typing-text" class="hero-title"></h1>
+            <p class="hero-subtitle">Every moment with you is my favorite memory.</p>
+
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="scrollToSection('letter')">Open My Heart ❤️</button>
+                <button class="btn btn-ghost" onclick="window.__openSurprise && window.__openSurprise()">Special Surprise 🎁</button>
+            </div>
+        </div>
+
+        <!-- Scroll hint -->
+        <a href="#letter" class="scroll-hint" aria-label="Scroll down">
+            <span class="mouse">
+                <span class="wheel"></span>
+            </span>
+        </a>
+    </header>
+
+    <!-- ===================== LOVE LETTER SECTION ===================== -->
+    <section id="letter" class="section">
+        <div class="section-inner narrow">
+            <p class="section-label" data-reveal="fade">A Little Note For You</p>
+            <h2 class="section-title" data-reveal="fade">My Love Letter</h2>
+
+            <div class="letter-card glass" data-reveal="zoom" data-delay="150">
+                <span class="wax-seal" aria-hidden="true">S</span>
+
+                <p class="letter-greeting">Dear Subaita,</p>
+
+                <p class="letter-body">
+                    Since you came into my life, everything feels brighter. Your smile gives me peace,
+                    your voice gives me comfort, and your love gives me strength. No matter what happens
+                    in life, I promise to stand beside you, support your dreams, and love you with all
+                    my heart. You are the most beautiful chapter of my life. ❤️
+                </p>
+
+                <p class="letter-signature">Forever yours…</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== OUR STORY TIMELINE ===================== -->
+    <section id="story" class="section section-tinted">
+        <div class="section-inner">
+            <p class="section-label" data-reveal="fade">Written in the stars</p>
+            <h2 class="section-title" data-reveal="fade">Our Story</h2>
+
+            <div class="timeline">
+                <div class="tl-item" data-reveal="left">
+                    <div class="tl-dot">💫</div>
+                    <div class="tl-card glass">
+                        <h3 class="tl-title">The Day We Met</h3>
+                        <p class="tl-text">The moment our eyes met, the world quietly changed. I didn't know it yet, but that was the beginning of my favorite story.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-reveal="right">
+                    <div class="tl-dot">😊</div>
+                    <div class="tl-card glass">
+                        <h3 class="tl-title">The First Smile</h3>
+                        <p class="tl-text">Your first smile felt like sunrise — it lit up everything around you and somehow, my whole heart.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-reveal="left">
+                    <div class="tl-dot">💬</div>
+                    <div class="tl-card glass">
+                        <h3 class="tl-title">Endless Conversations</h3>
+                        <p class="tl-text">Late-night talks that never felt late. We shared dreams, laughter, and a thousand tiny moments I keep close.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-reveal="right">
+                    <div class="tl-dot">📸</div>
+                    <div class="tl-card glass">
+                        <h3 class="tl-title">Beautiful Memories</h3>
+                        <p class="tl-text">Every laugh, every glance, every little adventure — a collection of golden memories I'll treasure forever.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item" data-reveal="left">
+                    <div class="tl-dot">♾️</div>
+                    <div class="tl-card glass">
+                        <h3 class="tl-title">Forever Together</h3>
+                        <p class="tl-text">And now, looking ahead, I only see one future — walking through every season of life holding your hand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY I LOVE YOU ===================== -->
+    <section id="reasons" class="section">
+        <div class="section-inner">
+            <p class="section-label" data-reveal="fade">A thousand reasons</p>
+            <h2 class="section-title" data-reveal="fade">Why I Love You</h2>
+
+            <div class="reasons-grid">
+                <div class="reason-card glass" data-reveal="zoom">
+                    <span class="reason-icon">😊</span>
+                    <h3 class="reason-name">Your Smile</h3>
+                    <p class="reason-text">It turns my hardest day into my happiest one.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="60">
+                    <span class="reason-icon">❤️</span>
+                    <h3 class="reason-name">Your Kind Heart</h3>
+                    <p class="reason-text">The gentlest soul I have ever had the joy of knowing.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="120">
+                    <span class="reason-icon">🌸</span>
+                    <h3 class="reason-name">Your Caring Nature</h3>
+                    <p class="reason-text">You care for everyone around you like magic.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="180">
+                    <span class="reason-icon">✨</span>
+                    <h3 class="reason-name">Your Beautiful Eyes</h3>
+                    <p class="reason-text">I could get lost in them for a lifetime and never mind.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom">
+                    <span class="reason-icon">🎵</span>
+                    <h3 class="reason-name">Your Cute Voice</h3>
+                    <p class="reason-text">My favorite melody in the whole wide world.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="60">
+                    <span class="reason-icon">🤍</span>
+                    <h3 class="reason-name">Your Loyalty</h3>
+                    <p class="reason-text">You stand by the people you love, no matter what.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="120">
+                    <span class="reason-icon">🌹</span>
+                    <h3 class="reason-name">Your Support</h3>
+                    <p class="reason-text">You believe in me even when I forget to believe in myself.</p>
+                </div>
+                <div class="reason-card glass" data-reveal="zoom" data-delay="180">
+                    <span class="reason-icon">💖</span>
+                    <h3 class="reason-name">Everything About You</h3>
+                    <p class="reason-text">The little things, the big things — all of it, endlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ROMANTIC GALLERY ===================== -->
+    <section id="gallery" class="section section-tinted">
+        <div class="section-inner">
+            <p class="section-label" data-reveal="fade">Little moments</p>
+            <h2 class="section-title" data-reveal="fade">Our Beautiful Gallery</h2>
+
+            <div id="gallery-grid" class="gallery-grid">
+                <!-- Gallery items injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LOVE COUNTER ===================== -->
+    <section id="counter" class="section">
+        <div class="section-inner narrow center">
+            <p class="section-label" data-reveal="fade">Time has never felt so precious</p>
+            <h2 class="section-title" data-reveal="fade">Loving You For</h2>
+
+            <div class="timer-card glass" data-reveal="zoom">
+                <div id="love-timer" class="timer-grid">
+                    <div class="timer-box">
+                        <span id="t-days" class="timer-num">0</span>
+                        <span class="timer-label">Days</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="t-hours" class="timer-num">0</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="t-minutes" class="timer-num">0</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-box">
+                        <span id="t-seconds" class="timer-num">0</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+                <p id="counter-caption" class="timer-caption"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== REASONS COUNTER BAND ===================== -->
+    <section id="reasons-counter" class="stats-band">
+        <div class="stats-grid">
+            <div class="stat-box" data-reveal="fade">
+                <p class="stat-num"><span class="count" data-target="999">0</span>%</p>
+                <p class="stat-label">Infinite Love ❤️</p>
+            </div>
+            <div class="stat-box" data-reveal="fade" data-delay="100">
+                <p class="stat-num"><span class="count" data-target="1000">0</span>+</p>
+                <p class="stat-label">Endless Smiles 😊</p>
+            </div>
+            <div class="stat-box" data-reveal="fade" data-delay="200">
+                <p class="stat-num"><span class="count" data-target="365">0</span>+</p>
+                <p class="stat-label">Countless Memories 📸</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== INTERACTIVE LOVE BUTTON ===================== -->
+    <section id="love" class="section">
+        <div class="section-inner narrow center">
+            <p class="section-label" data-reveal="fade">A tiny game for your heart</p>
+            <h2 class="section-title" data-reveal="fade">Click If You Love Me</h2>
+
+            <button id="love-btn" class="btn btn-love" data-reveal="zoom">Click If You Love Me ❤️</button>
+
+            <div class="love-stats" data-reveal="fade" data-delay="150">
+                <div class="glass love-box">
+                    <p class="love-box-label">Love Points Collected</p>
+                    <p id="love-score" class="love-box-value">0</p>
+                </div>
+                <div class="glass love-box">
+                    <p class="love-box-label">Today's Message</p>
+                    <p id="love-message" class="love-box-msg">Waiting for you… 💕</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <p class="footer-brand">S ❤️</p>
+        <p class="footer-line">Made with <span class="footer-heart">❤️</span> by Someone Who Loves You Forever.</p>
+        <p class="footer-copy">© <span id="year"></span> For Subaita — always and forever.</p>
+    </footer>
+
+    <!-- ===================== SURPRISE MODAL ===================== -->
+    <div id="surprise-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-backdrop" onclick="window.__closeSurprise && window.__closeSurprise()"></div>
+        <div class="modal-card">
+            <button class="modal-close" onclick="window.__closeSurprise && window.__closeSurprise()" aria-label="Close">✕</button>
+
+            <div class="glowing-heart" aria-hidden="true">
+                <span>❤️</span>
+                <div class="glow-ring"></div>
+            </div>
+
+            <h3 id="modal-title" class="modal-title">My Wish For You</h3>
+            <p class="modal-text">
+                Subaita, if I had one wish, it would be to spend every tomorrow with you. ❤️
+            </p>
+            <button class="btn btn-primary modal-cta" onclick="window.__closeSurprise && window.__closeSurprise()">Close ✨</button>
+        </div>
+    </div>
+
+    <!-- ===================== FLOATING MUSIC PLAYER ===================== -->
+    <div id="music-player" class="music-player glass">
+        <div class="mp-art" id="mp-art" title="Minimize / expand">🎵</div>
+        <div class="mp-body">
+            <p class="mp-title">Our Melody</p>
+            <p class="mp-sub">a song for Subaita</p>
+            <input id="mp-progress" type="range" min="0" max="100" value="0" aria-label="Progress">
+            <div class="mp-controls">
+                <button id="mp-play" aria-label="Play or pause">▶</button>
+                <div class="mp-vol">
+                    <span class="mp-vol-icon">🔊</span>
+                    <input id="mp-volume" type="range" min="0" max="1" step="0.01" value="0.8" aria-label="Volume">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== MAIN SCRIPT ===================== -->
+    <script src="js/main.js"></script>
+</body>
+</html>
